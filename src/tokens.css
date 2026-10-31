@@ -1,0 +1,39 @@
+/* `static` keeps every variable in the output even when no utility uses it yet (Tailwind v4 otherwise drops unused ones).
+   Generated from tokens.json. Tailwind v4: @theme makes every var a utility (bg-surface, text-muted, border-border...).
+   Legacy aliases keep existing components working; migrate them to role names over time, then delete the aliases. */
+@theme static {
+  --color-bg: #121214;
+  --color-surface: #1c1c20;
+  --color-raised: #26262c;
+  --color-border: #34343c;
+  --color-border-input: #8a8a96;
+  --color-text: #ececf1;
+  --color-text-muted: #a6a6b2;
+  --color-accent: #3b5bdb;
+  --color-accent-hover: #3049b8;
+  --color-on-accent: #ffffff;
+  --color-accent-text: #9db1ff;
+  --color-danger: #ff7b7b;
+  --color-success: #3ecf8e;
+  --color-warning: #f5a524;
+
+  /* legacy aliases (pre-design-system names used in src/) */
+  --color-line: #34343c;
+  --color-brand: #3b5bdb;
+  --color-brand-dark: #3049b8;
+  --color-muted: #a6a6b2;
+  --color-ok: #3ecf8e;
+  --color-warn: #f5a524;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --shadow-card: 0 1px 2px rgba(0,0,0,.4), 0 2px 6px rgba(0,0,0,.35);
+  --shadow-pop: 0 16px 40px rgba(0,0,0,.6);
+
+  --ease-ui: cubic-bezier(.2,.8,.2,1);
+}
